@@ -8,6 +8,5 @@ public class CabInvoiceMain {
         System.out.println("Welcome to Cab Services");
 
         System.out.println(invoice.fareCalculation(1, 4));
-
     }
 }
