@@ -5,7 +5,8 @@ import com.blz.CabInvoice.Rides;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class InvoiceGeneratorTest {
+
+class InvoiceGeneratorTest {
 
     private Assertions Assert;
 
@@ -36,7 +37,7 @@ public class InvoiceGeneratorTest {
         };
         InvoiceSummary summary = invoice.invoiceSummary(rides);
         InvoiceSummary expectedInvoice = new InvoiceSummary(3, 140.0);
-        Assert.assertEquals(expectedInvoice, summary);
+        Assertions.assertEquals(expectedInvoice, summary);
     }
 
     @Test
@@ -45,6 +46,7 @@ public class InvoiceGeneratorTest {
         InvoiceSummary summary = invoice.getInvoice(1);
         InvoiceSummary expectedInvoices = new InvoiceSummary(2, 66);
         Assert.assertEquals(expectedInvoices, summary);
+
     }
 
     @Test
